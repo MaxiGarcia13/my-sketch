@@ -1,20 +1,32 @@
 {
   "name": "my-sketch",
+  "type": "module",
   "version": "0.0.0",
   "description": "Canvas Art sketch",
+  "author": "Maximiliano Garcia Mortigliengo",
+  "license": "ISC",
   "homepage": "https://github.com/MaxiGarcia13/my-sketch#readme",
-  "bugs": {
-    "url": "https://github.com/MaxiGarcia13/my-sketch/issues"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MaxiGarcia13/my-sketch.git"
   },
-  "license": "ISC",
-  "author": "Maximiliano Garcia Mortigliengo",
-  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/MaxiGarcia13/my-sketch/issues"
+  },
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^6.4.2",
+    "lint-staged": "^16.2.7",
+    "simple-git-hooks": "^2.13.1"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
   }
 }
