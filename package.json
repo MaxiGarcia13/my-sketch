@@ -15,13 +15,26 @@
   },
   "main": "index.js",
   "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "lint:fix": "eslint --fix ."
+    "lint:fix": "eslint --fix .",
+    "preview": "vite preview",
+    "postinstall": "npx simple-git-hooks"
+  },
+  "dependencies": {
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^6.4.2",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
     "lint-staged": "^16.2.7",
-    "simple-git-hooks": "^2.13.1"
+    "simple-git-hooks": "^2.13.1",
+    "vite": "^7.2.6"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
