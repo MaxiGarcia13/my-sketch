@@ -32,6 +32,8 @@
     "postinstall": "npx simple-git-hooks"
   },
   "dependencies": {
+    "canvas-sketch": "^0.7.7",
+    "canvas-sketch-util": "^1.10.0",
     "react": "^19.2.1",
     "react-dom": "^19.2.1"
   },
