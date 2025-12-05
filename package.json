@@ -13,6 +13,15 @@
   "bugs": {
     "url": "https://github.com/MaxiGarcia13/my-sketch/issues"
   },
+  "keywords": [
+    "sketch",
+    "2d",
+    "canvas",
+    "canvas2d",
+    "generative",
+    "art",
+    "generativeart"
+  ],
   "main": "index.js",
   "scripts": {
     "dev": "vite",
