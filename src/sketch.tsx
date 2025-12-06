@@ -47,7 +47,7 @@ export function Sketch() {
       const maxColors = random.rangeFloor(2, 6);
       const fontFamily = '"Fira Code"';
       const palette = random.shuffle(random.pick(palettes)).slice(0, maxColors);
-      const background = random.pick(['#f4f4f4', '#1c1b22']);
+      const background = random.pick(['#f4f4f4', '#1c1b22', '#fff']);
       const characters = random.pick(letters).split('');
 
       const createGrid = () => {
