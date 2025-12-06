@@ -38,7 +38,7 @@ export function Sketch() {
     const settings = {
       dimensions: 'A4',
       parent: container.current ?? window.document.body,
-      orientation: 'landscape',
+      orientation: random.pick(['landscape', 'portrait']),
     };
 
     const sketch = ({ width }) => {
