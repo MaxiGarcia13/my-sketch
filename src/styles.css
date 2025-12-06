@@ -29,12 +29,20 @@
 body {
   font-family: 'Fira Code';
   font-variant-ligatures: contextual;
-}
-
-.container {
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  padding: 1rem;
+}
+
+.container {
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  padding: 1rem 0;
 }

@@ -111,6 +111,6 @@ export function Sketch() {
   }, []);
 
   return (
-    <div ref={container} className="container"></div>
+    <div ref={container} className="sketch"></div>
   );
 };
