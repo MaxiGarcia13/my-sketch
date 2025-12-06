@@ -1,4 +1,3 @@
-my-sketch/README.md
 # My Sketch
 
 ## Project Explanation
