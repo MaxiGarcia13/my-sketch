@@ -48,6 +48,12 @@ body {
   border-radius: 4px;
 }
 
+.download {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
 .footer {
   padding: 1rem 0;
 }

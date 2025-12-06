@@ -111,7 +111,20 @@ export function Sketch() {
     canvasSketch(sketch, settings);
   }, []);
 
+  const handleDownload = () => {
+    const canvas = container.current?.firstChild as HTMLCanvasElement;
+    const dataURL = canvas.toDataURL('image/png');
+    const link = document.createElement('a');
+
+    link.href = dataURL;
+    link.download = `sketch-${Date.now()}.png`;
+    link.click();
+  };
+
   return (
-    <div ref={container} className="sketch"></div>
+    <>
+      <div ref={container} className="sketch"></div>
+      <button className="download" onClick={handleDownload}>Download</button>
+    </>
   );
 };
