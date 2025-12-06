@@ -43,6 +43,11 @@ body {
   align-items: center;
 }
 
+.sketch canvas {
+  overflow: hidden;
+  border-radius: 4px;
+}
+
 .footer {
   padding: 1rem 0;
 }
