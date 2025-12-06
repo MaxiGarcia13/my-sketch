@@ -37,7 +37,7 @@ export function Sketch() {
 
   useEffect(() => {
     const settings = {
-      dimensions: 'A4',
+      dimensions: 'A3',
       parent: container.current ?? window.document.body,
       orientation: random.pick(['landscape', 'portrait']),
     };
