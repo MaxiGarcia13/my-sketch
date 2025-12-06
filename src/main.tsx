@@ -1,8 +1,6 @@
-import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
+import { Sketch } from './sketch';
 
 createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <div>Hola</div>
-  </StrictMode>,
+  <Sketch />,
 );
