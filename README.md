@@ -57,19 +57,3 @@ Check and fix code style:
 npm run lint
 npm run lint:fix
 ```
-
-## Project Structure
-
-- `src/sketch.tsx`: Main generative art logic.
-- `src/main.tsx`: React entry point.
-- `src/styles.css`: Custom styles and font loading.
-- `public/fonts`: Fira Code font files (required for best results).
-
-## License
-
-ISC © Maximiliano Garcia Mortigliengo
-
-## Links
-
-- [Repository](https://github.com/MaxiGarcia13/my-sketch)
-- [Issues](https://github.com/MaxiGarcia13/my-sketch/issues)
